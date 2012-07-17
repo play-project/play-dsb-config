@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wstop:TopicSet xmlns:wstop="http://docs.oasis-open.org/wsn/t-1"
+	xmlns:s="http://streams.event-processing.org/ids/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xhtml="http://www.w3.org/1999/xhtml#" xmlns:tns1="http://radiationsurveynetwork/"
+	xmlns:play="http://www.play-project.eu/xml/ns/">
+
+	<!-- FZI -->
+	<s:FacebookStatusFeed wstop:topic="true"
+		xhtml:icon="https://s-static.ak.facebook.com/rsrc.php/yi/r/q9U99v3_saj.ico"
+		dcterms:title="Facebook Status Feed" dcterms:description="A stream of Facebook Wall updates."></s:FacebookStatusFeed>
+	<s:FacebookCepResults wstop:topic="true"
+		dcterms:title="Facebook Complex Events" dcterms:description="A stream of Facebook CEP results." play:hasComplexEvents="true"></s:FacebookCepResults>
+	<s:PachubeFeed wstop:topic="true"
+		xhtml:icon="http://pachube.com/favicon.ico" dcterms:title="Pachube Stream"
+		dcterms:description="A stream of Pachube events."></s:PachubeFeed>
+	<s:TwitterFeed wstop:topic="true"
+		xhtml:icon="https://twitter.com/phoenix/favicon.ico" dcterms:title="Twitter Stream"
+		dcterms:description="A stream of Twitter events."></s:TwitterFeed>
+		
+	<!-- ICCS -->
+	<s:ESRRecom wstop:topic="true" xhtml:icon="http://www.famfamfam.com/lab/icons/mini/icons/comment_yellow.gif" dcterms:title="Event Subscription Recommendations" dcterms:description="A stream of recommendations from the ESR service." />
+	<s:SARRecom wstop:topic="true" xhtml:icon="http://www.famfamfam.com/lab/icons/mini/icons/comment_blue.gif" dcterms:title="Service Adaptation Recommendations" dcterms:description="A stream of recommendations from the SAR service." />
+	
+	<s:VesselStream wstop:topic="true" xhtml:icon="http://www.aishub.net/templates/ja_purity/favicon.ico" dcterms:title="Vessel information." dcterms:description="AIS events regarding vessel location and other information." />
+	<s:ProximityInfoStream wstop:topic="true" xhtml:icon="http://www.aishub.net/templates/ja_purity/favicon.ico" dcterms:title="Vessel proximity information." dcterms:description="AIS events regarding vessel proximity." />
+
+	<!-- FT -->
+	<dsb:TaxiUCIMA xmlns:taxi="http://www.petalslink.org/resources/event/1.0" xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png"
+		xmlns:dsb="http://www.petalslink.org/dsb/topicsns/" wstop:topic="true" />
+
+	<dsb:TaxiUCIMP xmlns:taxi="http://www.petalslink.org/resources/event/1.0" xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png"
+		xmlns:dsb="http://www.petalslink.org/dsb/topicsns/" wstop:topic="true" />
+
+	<dsb:TaxiUCLocation xmlns:taxi="http://www.petalslink.org/resources/event/1.0" xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png"
+		xmlns:dsb="http://www.petalslink.org/dsb/topicsns/" wstop:topic="true" />
+
+	<dsb:TaxiUCLocTraficInfo xmlns:taxi="http://www.petalslink.org/resources/event/1.0" xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png"
+		xmlns:dsb="http://www.petalslink.org/dsb/topicsns/" wstop:topic="true" />
+
+	<dsb:TaxiUCLocTraficUnex xmlns:taxi="http://www.petalslink.org/resources/event/1.0" xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png"
+		xmlns:dsb="http://www.petalslink.org/dsb/topicsns/" wstop:topic="true" />
+		
+	<s:TaxiUCAvailability dcterms:title="Taxi Availability Events" dcterms:description="" xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png" wstop:topic="true" />
+	<s:TaxiUCCall dcterms:title="Telco Call Events" dcterms:description="Call events from the phones." xhtml:icon="http://orange.com/sirius/logos_mail/orange_icon.ico" wstop:topic="true" />
+	<s:TaxiUCClic2Call dcterms:title="Telco Clic2Call Events" dcterms:description="Events to be sent to the Orange Clic2Call API" xhtml:icon="http://orange.com/sirius/logos_mail/orange_icon.ico" wstop:topic="true" play:hasComplexEvents="true" />
+	<s:TaxiUCFaceBook dcterms:title="Telco Facebook Events" dcterms:description="Facebook events from mobile phones." xhtml:icon="http://orange.com/sirius/logos_mail/orange_icon.ico" wstop:topic="true" />
+	<s:TaxiUCGeoLocation dcterms:title="Telco Location Updates" dcterms:description="Location updates from mobile phones." xhtml:icon="http://orange.com/sirius/logos_mail/orange_icon.ico" wstop:topic="true" />
+	<s:TaxiUCIncomingCall dcterms:title="Telco incoming Calls" dcterms:description="Incoming call notifications from mobile phones." xhtml:icon="http://orange.com/sirius/logos_mail/orange_icon.ico" wstop:topic="true" />
+	<s:TaxiUCOutNetwork dcterms:title="Telco out-of-network Events" dcterms:description="" xhtml:icon="http://orange.com/sirius/logos_mail/orange_icon.ico" wstop:topic="true" />
+	<s:TaxiUCPresence dcterms:title="Taxi Presence Events" dcterms:description="" xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png" wstop:topic="true" />
+	<s:TaxiUCSMSCustomerAlert dcterms:title="Taxi Customer Alerts" dcterms:description="" xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png" wstop:topic="true" />
+	<s:TaxiUCTrafficJam dcterms:title="Taxi Traffic Jams" dcterms:description="" xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png" wstop:topic="true" />
+	<s:TaxiUCTwitter dcterms:title="Telco Twitter Events" dcterms:description="Twitter events from mobile phones." xhtml:icon="http://orange.com/sirius/logos_mail/orange_icon.ico" wstop:topic="true" />
+	<s:TaxiUCUnexpected dcterms:title="Taxi unexpected Events" dcterms:description="Unexpected events from Taxis such as flat tires, accidents, ..." xhtml:icon="http://i911.photobucket.com/albums/ac319/radiotaxi_xanthis/favicontaxi.png" wstop:topic="true" />
+	<s:ContextualizedLatitudeFeed dcterms:title="Contextualized Latitude Events" dcterms:description="Location events in proximity to each other." xhtml:icon="http://orange.com/sirius/logos_mail/orange_icon.ico" wstop:topic="true" play:hasComplexEvents="true" />
+		
+	<!-- ARMINES -->
+	<nuclear:situationalEvent xmlns:nuclear="http://www.mines-albi.fr/nuclearcrisisevent" dcterms:title="Crisis Situational Events" xhtml:icon="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAwMAAwojBAkTOQQJEzkAAwojAAEDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAECysDCx2DJzA/u2BndtRgaHfUKDFAuwMMHYMAAworAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQIbTH0AEj72BgUH/0JBQP92dXP/eHd1/0ZFRP8GBQf/ABhP9gIbTn0AAAAFAAAAAAAAAAAAAAAAAAAAAwEkbbEIVuL/HD5o/y8qJP81NTX/Ly8v/zExMf89Pj7/PTcw/yZNfv8IVuP/ASRtsQAAAAMAAAAAAAAAAAAWRncOXt7/PKv2/0Wv6P8IEBX/AAAA/wAAAP8AAAD/AAAA/xQgJ/9KtvL/Qqv1/w5e3f8AFkZ3AAAAAAAABAwJRq7mPa/5/0W8+P9Ev///RJTA/xEODv8EAwP/AwMC/xcWFf9ModH/Pbj9/z+29/83qvj/CEWu5gAABAwAByM6Korn/0zD+/9JvPf/Sr33/1DK//9Pdor/EgwI/xELB/9IdIr/S8b//0S49v9Ctvb/Qrv6/yWF5v8AByI5AxY2TkW3/f9Qxvz/UcX7/1LF+/9Sx/7/V8T2/y82Of8oMTX/Ub/z/03E/f9MwPr/Sb76/0a+/P88r/7/Axc7UQgdN05Ir+X/TLLg/02z3/9PtN//T7Tf/1C85/9Ado3/QHeQ/0+66P9Lsd//Sa/f/0as3v9Dqt7/PKPh/wchRFUDDiNIGR8o/yAhIf8mJyf/Ky0t/y8wMf8vKij/RHWI/0Z3iv8wKyn/LzEx/ystLf8mJyf/ICAg/xgdJv8DDyVHAQobHiIrPPoxLyz/ODc3/0FAQP9DQUD/X2Nl/2zS9v9o0fb/YGdp/0NAP/9BQED/ODg3/zEvLP8iLT/6AQocHgAAAAAZLU21PDo3/0JBQf9JSUn/WlNQ/47K3f9o3f//Ztr//4rP5v9gWVf/SUlJ/0JCQv88Ojf/GS5QtQAAAAAAAAAAAw8jIzVGYPVPS0b/Uk1L/3qTmv935v//cN37/27c+/9w4v//fp+q/1ROTP9PS0b/NEdj9QIPJCMAAAAAAAAAAAAAAAAHGTQ9OE1r3GVucP983vH/eOf//3jj/P924fv/c+L+/3Tc9v9lc3f/OE1t3AYaNj0AAAAAAAAAAAAAAAAAAAAAAAAAAAAIFw8pX42SX8fx5XXf+/985vz/euT8/2/a+v9XwfDlJ2CSkgAIFw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApLlywgdMRnLpTqni6T6p4ec8VnCkuWLAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPgfAADwDwAAwAMAAMADAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAwAMAAOAHAADwDwAA/n8AAA==" wstop:topic="true" />
+	<tns1:activityEvent dcterms:title="Crisis Activity Events" wstop:topic="true" />
+	<tns1:resourcesEvent dcterms:title="Crisis Resources Events" wstop:topic="true" />
+	<tns1:consequenceEvent dcterms:title="Crisis Consequence Events" wstop:topic="true" />
+				
+</wstop:TopicSet> 

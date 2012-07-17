@@ -1,4 +1,3 @@
-play-dsb-config
-===============
+# Play Distributed Service Bus Configuration
 
-Play Distributed Service Bus Configuration
+Get the latest Petals DSB and replace files in $DSB/conf with the current repository ones.
