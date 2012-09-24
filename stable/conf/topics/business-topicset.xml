@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- This file is DEPRECATED. The WSN component now uses the Governance Service to retrieve the topics -->
+
 <wstop:TopicSet xmlns:wstop="http://docs.oasis-open.org/wsn/t-1"
 	xmlns:s="http://streams.event-processing.org/ids/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xhtml="http://www.w3.org/1999/xhtml#" 
