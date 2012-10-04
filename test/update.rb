@@ -3,11 +3,11 @@
 
 require 'fileutils'
 
-puts '[PLAY] Configuring DSB'
+puts '[PLAY] Configuring DSB TEST'
 
-fail 'Please set DSB_STABLE environment variable!' if !ENV['DSB_STABLE']
+fail 'Please set DSB_TEST environment variable!' if !ENV['DSB_TEST']
 
-dsb = ENV['DSB_STABLE']
+dsb = ENV['DSB_TEST']
 puts "[PLAY] Target DSB is under #{dsb}"
 conf = File.join(dsb, "conf")
 
